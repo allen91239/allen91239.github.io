@@ -11,7 +11,7 @@ if __name__ == "__main__":
         f = open(f'hit{i}.html','wb')
         data = corpus[i]
         wordcount = data.split(' ')
-        counttime = int(len(wordcount)/2)
+        counttime = int(len(wordcount))
         message = f"""<!doctype html>
 <html lang="en"><head>
 	<meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
