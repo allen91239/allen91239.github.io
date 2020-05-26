@@ -6,12 +6,11 @@ if __name__ == "__main__":
     df = pd.read_csv("./lab4-data.csv") 
     title = df.idx.to_list()
     corpus = df.text.to_list()
-    
     for i in range(len(df)):
         f = open(f'hit{i}.html','wb')
         data = corpus[i]
         wordcount = data.split(' ')
-        counttime = int(len(wordcount))
+        counttime = int(len(wordcount))/2
         message = f"""<!doctype html>
 <html lang="en"><head>
 	<meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
