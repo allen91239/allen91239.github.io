@@ -20,7 +20,7 @@ if __name__ == "__main__":
 <body>
 	<form id="mturk_form" method="post" name="mturk_form" action="https://www.mturk.com/mturk/externalSubmit">
 		<input type="hidden" id="assignmentId" value="" name="assignmentId">
-		<input type="hidden" name="idx" value="{idx[i]}>
+		<input type="hidden" name="idx" value="{idx[i]}">
 		<h2>After reading the tweet, choose from the options below how the tweet feels.</h2>
 		<br>
 		<p class="solid">{data}</p>
