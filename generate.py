@@ -4,7 +4,7 @@
 import pandas as pd
 if __name__ == "__main__":
     df = pd.read_csv("./lab4-data.csv") 
-    title = df.idx.to_list()
+    idx = df.idx.to_list()
     corpus = df.text.to_list()
     for i in range(len(df)):
         f = open(f'hit{i}.html','wb')
@@ -19,7 +19,7 @@ if __name__ == "__main__":
 </head>
 <body>
 	<form id="mturk_form" method="post" name="mturk_form" action="https://www.mturk.com/mturk/externalSubmit">
-		<input type="hidden" id="assignmentId" value="" name="assignmentId">
+		<input type="hidden" id="assignmentId" value="{idx[i]}" name="assignmentId">
 
 		<h2>After reading the tweet, choose from the options below how the tweet feels.</h2>
 		<br>
